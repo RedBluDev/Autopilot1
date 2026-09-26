@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: #000000;
+    overflow: hidden;
+    width: 100dvw;
+    height: 100dvh;
+}
+.Autopilot, .menu{
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.Autopilot img{
+    left: 50dvw;
+    top: 50dvh;
+    width: 10dvh;
+    height: 10dvh;
+    z-index: -1;
+    opacity: 1;
+    rotate: 0turn;
+    --skewX: 0turn;
+    --skewY: 0turn;
+    position: absolute;
+    transform: skew(var(--skewX), var(--skewY)) translate(-50%, -50%);
+}
+.Autopilot pre{
+    left: 50dvw;
+    top: 50dvh;
+    width: 10dvh;
+    height: 10dvh;
+    z-index: -1;
+    opacity: 1;
+    font-family: monospace;
+    font-size: 5dvh;
+    color: #ffffff;
+    rotate: 0turn;
+    --skewX: 0turn;
+    --skewY: 0turn;
+    position: absolute;
+    transform: skew(var(--skewX), var(--skewY)) translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.Autopilot div{
+    left: 50dvw;
+    top: 50dvh;
+    width: 10dvh;
+    height: 10dvh;
+    z-index: 0;
+    opacity: 0;
+    rotate: 0turn;
+    --skewX: 0turn;
+    --skewY: 0turn;
+    position: absolute;
+    transform: skew(var(--skewX), var(--skewY)) translate(-50%, -50%);
+}
+.menu label{
+    width: 100dvw;
+    position: absolute;
+    color: #ffffff;
+    font-family: monospace;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.title, .end{
+    height: calc(100dvh / 3);
+    left: 0;
+}
+.title{
+    top: 0;
+    font-size: 16dvh;
+}
+.end{
+    top: calc(100dvh / 3);
+    font-size: 10dvh;
+}
+.game, .map{
+    height: calc(100dvh / 12);
+    left: 50dvw;
+    font-size: 4dvh;
+    transform: translate(-50%);
+}
+.map{
+    bottom: calc(100dvh / 12);
+}
+.game{
+    bottom: 0;
+}
+.menu input, .menu button{
+    width: calc(200dvh / 3);
+    height: calc(100dvh / 6);
+    position: absolute;
+    left: 50dvw;
+    transform: translate(-50%, 0);
+    background-color: #000000;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 10dvh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border: 2dvh solid #ffffff;
+}
+.menu input{
+    top: calc(100dvh / 3);
+    border-top-left-radius: 2dvh;
+    border-top-right-radius: 2dvh;
+    border-bottom: none;
+}
+.menu button{
+    bottom: calc(100dvh / 3);
+    border-bottom-left-radius: 2dvh;
+    border-bottom-right-radius: 2dvh;
+    border-top: none;
+}
+.menu a, .menu a *{
+    width: calc(100dvh / 6);
+    height: calc(100dvh / 6);
+    position: absolute;
+    bottom: 0;
+}
+.github, .github img{
+    left: 0
+}
+.itchio, .itchio img{
+    right: 0
+}
+.hidden{
+    display: none !important;
+}

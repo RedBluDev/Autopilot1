@@ -1,0 +1,9 @@
+{
+    "Acr": ["roomLbl", "rtBtn", "ltBtn", "rtLbl", "ltLbl", "rtK", "ltK"],
+    "Alt": ["roomLbl", "crBtn", "rtBtn", "crLbl", "rtLbl", "crK", "rtK"],
+    "Art": ["roomLbl", "crBtn", "ltBtn", "crLbl", "ltLbl", "crK", "ltK"],
+    "Bcr": ["roomLbl", "rtBtn", "ltBtn", "rtLbl", "ltLbl", "rtK", "ltK"],
+    "Blt": ["roomLbl", "crBtn", "rtBtn", "crLbl", "rtLbl", "crK", "rtK"],
+    "Brt": ["roomLbl", "crBtn", "ltBtn", "crLbl", "ltLbl", "crK", "ltK"],
+    "end": ["endLbl"]
+}

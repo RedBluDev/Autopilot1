@@ -1,0 +1,4 @@
+{
+    "player": {"side": "b", "fn": "fp", "ch": "p", "df": "kill", "in": "Acr", "at": "Acr"},
+    "killer": {"side": "g", "fn": "fk", "ch": "k", "in": "Bcr", "at": "Bcr", "min": 1000, "max": 6000}
+}

@@ -1,0 +1,215 @@
+{
+    "start": [],
+    "kill": [{"wait": [1]}, {
+        "entities": {"player": {"in": "end", "at": "end"}}
+    }],
+
+    "AltP": {"c": {"ent": "killer", "p": "in", "v": "Brt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Acr"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }}},
+
+    "AcrP": {"c": {"ent": "killer", "p": "in", "v": "Alt"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Art"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }}},
+
+    "ArtP": {"c": {"ent": "killer", "p": "in", "v": "Acr"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Blt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }}},
+
+    "BltP": {"c": {"ent": "killer", "p": "in", "v": "Art"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Bcr"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }}},
+
+    "BcrP": {"c": {"ent": "killer", "p": "in", "v": "Blt"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Brt"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }}},
+
+    "BrtP": {"c": {"ent": "killer", "p": "in", "v": "Bcr"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }, "f2": {"c": {"ent": "killer", "p": "in", "v": "Alt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }}},
+
+    "AltK": {"c": {"ent": "player", "p": "in", "v": "Brt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Acr"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }}},
+
+    "AcrK": {"c": {"ent": "player", "p": "in", "v": "Alt"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Art"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }}},
+
+    "ArtK": {"c": {"ent": "player", "p": "in", "v": "Acr"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Blt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }}},
+
+    "BltK": {"c": {"ent": "player", "p": "in", "v": "Art"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Bcr"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }}},
+
+    "BcrK": {"c": {"ent": "player", "p": "in", "v": "Blt"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Brt"}, "f1": {
+        "nodes": {"ltK": {"p": true}}
+    }}},
+
+    "BrtK": {"c": {"ent": "player", "p": "in", "v": "Bcr"}, "f1": {
+        "nodes": {"rtK": {"p": true}}
+    }, "f2": {"c": {"ent": "player", "p": "in", "v": "Alt"}, "f1": {
+        "nodes": {"crK": {"p": true}}
+    }}},
+
+    "ltFnP": {"c": {"ent": "player", "p": "in", "v": "Acr"}, "f1": [
+        {
+            "entities": {"player": {"in": "Alt", "at": "Alt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AltP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Art"}, "f1": [
+        {
+            "entities": {"player": {"in": "Acr", "at": "Acr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AcrP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Bcr"}, "f1": [
+        {
+            "entities": {"player": {"in": "Blt", "at": "Blt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BltP"}
+    ], "f2": [
+        {
+            "entities": {"player": {"in": "Bcr", "at": "Bcr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BcrP"}
+    ]}}},
+
+
+    "ltFnK": {"c": {"ent": "killer", "p": "in", "v": "Acr"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Alt", "at": "Alt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AltK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Art"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Acr", "at": "Acr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AcrK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Bcr"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Blt", "at": "Blt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BltK"}
+    ], "f2": [
+        {
+            "entities": {"killer": {"in": "Bcr", "at": "Bcr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BcrK"}
+    ]}}},
+
+
+    "crFnP": {"c": {"ent": "player", "p": "in", "v": "Alt"}, "f1": [
+        {
+            "entities": {"player": {"in": "Brt", "at": "Brt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}, "roomLbl": {"l": "B"}}
+        }, {"f1": "BrtP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Art"}, "f1": [
+        {
+            "entities": {"player": {"in": "Blt", "at": "Blt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false},  "roomLbl": {"l": "B"}}
+        }, {"f1": "BltP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Blt"}, "f1": [
+        {
+            "entities": {"player": {"in": "Art", "at": "Art"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false},  "roomLbl": {"l": "A"}}
+        }, {"f1": "ArtP"}
+    ], "f2": [
+        {
+            "entities": {"player": {"in": "Alt", "at": "Alt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false},  "roomLbl": {"l": "A"}}
+        }, {"f1": "AltP"}
+    ]}}},
+
+
+    "crFnK": {"c": {"ent": "killer", "p": "in", "v": "Alt"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Brt", "at": "Brt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BrtK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Art"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Blt", "at": "Blt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BltK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Blt"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Art", "at": "Art"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "ArtK"}
+    ], "f2": [
+        {
+            "entities": {"killer": {"in": "Alt", "at": "Alt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AltK"}
+    ]}}},
+
+
+    "rtFnP": {"c": {"ent": "player", "p": "in", "v": "Alt"}, "f1": [
+        {
+            "entities": {"player": {"in": "Acr", "at": "Acr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AcrP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Acr"}, "f1": [
+        {
+            "entities": {"player": {"in": "Art", "at": "Art"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "ArtP"}
+    ], "f2": {"c": {"ent": "player", "p": "in", "v": "Blt"}, "f1": [
+        {
+            "entities": {"player": {"in": "Bcr", "at": "Bcr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BcrP"}
+    ], "f2": [
+        {
+            "entities": {"player": {"in": "Brt", "at": "Brt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BrtP"}
+    ]}}},
+
+
+    "rtFnK": {"c": {"ent": "killer", "p": "in", "v": "Alt"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Acr", "at": "Acr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "AcrK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Acr"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Art", "at": "Art"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "ArtK"}
+    ], "f2": {"c": {"ent": "killer", "p": "in", "v": "Blt"}, "f1": [
+        {
+            "entities": {"killer": {"in": "Bcr", "at": "Bcr"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BcrK"}
+    ], "f2": [
+        {
+            "entities": {"killer": {"in": "Brt", "at": "Brt"}},
+            "nodes": {"ltK": {"p": false}, "crK": {"p": false}, "rtK": {"p": false}}
+        }, {"f1": "BrtK"}
+    ]}}}
+}
